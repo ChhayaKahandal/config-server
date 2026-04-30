@@ -16,8 +16,7 @@ spring:
 
   cache:
     type: redis
-    redis:
-      time-to-live: 600000   # 10 minutes
+   
 
 eureka:
   client:
