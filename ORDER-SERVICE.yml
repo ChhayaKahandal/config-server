@@ -14,7 +14,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health
+        include: health,metrics,circuitbreakers,circuitbreaker-events
 
 resilience4j:
   circuitbreaker:
