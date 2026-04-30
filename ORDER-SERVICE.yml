@@ -20,6 +20,7 @@ resilience4j:
   circuitbreaker:
     instances:
       PRODUCT_SERVICE:
+        registerHealthIndicator: true
         slidingWindowSize: 10
         minimumNumberOfCalls: 5
         failureRateThreshold: 50
@@ -28,6 +29,7 @@ resilience4j:
         automaticTransitionFromOpenToHalfOpenEnabled: true
 
       USER_SERVICE:
+        registerHealthIndicator: true
         slidingWindowSize: 10
         minimumNumberOfCalls: 5
         failureRateThreshold: 50
